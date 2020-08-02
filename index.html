@@ -1,88 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial;}
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-</style>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS: Selecting by id</title>
+        <style>
+        
+        h2 {
+            color: rgb(0, 232, 15);
+        }  
+        
+        p {
+            color: rgb(191, 0, 255);
+        }
+        
+        #rabbits-song {
+            background-color: yellow;
+        }
+        
+        #rabbits-info-heading {
+            background-color: purple;
+        }
+        </style>
+    </head>
+    <body>
 
-<h2>ALGORITHOM BY MASRUL MOLLAH</h2>
+    <h1>All about rabbits!</h1>
+    
+    <h2 id="rabbits-info-heading">Basic info</h2>
+    
+    <p>Rabbits are little creatures with long ears and puffy tails, and they move their nose up and down in an adorable way. They eat the most orange vegetables in <em>our</em> world, and <strong>they reproduce more than any human <em>ever</em> has</strong>.</p>
+    
+    <h2>Songs</h2>
+    
+    <p id="rabbits-song">Little Bunny Foo Foo, <br>
+I don't want to see you <br>
+scooping up the field mice <br>
+and bopping them on the head!</p>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'ABOUT ME')">ABOUT ME</button>
-  <button class="tablinks" onclick="openCity(event, 'WHO INVENTED ALGORITHOM')">WHO INVENTED ALGORITHOM</button>
-  <button class="tablinks" onclick="openCity(event, 'WHAT IS ALGORITHOM')">WHAT IS ALGORITHOM</button>
-  <button class="tablinks" onclick="openCity(event, 'HOW ALGORITHOM WORKS')">HOW ALGORITHOM WORKS</button>
-  </div>
-
-<div id="ABOUT ME" class="tabcontent">
-  <h3>ABOUT ME</h3>
-  <p>MD. MASRUL MOLLAH ACA, ACMA, CGMA</p>
-  <h3>PROFESSIONAL SPECIALIZATION</h3>
-  <p>-Supply Chain Finance (procurement, distribution, inventory management and 3P manufacturing)</p>
-  <h3>PROFESSIONAL QUALIFICATION</h3>
-  <p>ICAEW ACA – Qualified - 2018</p>
-  <p></p>
-  <p>ACADEMIC QUALIFICATION</p>
-  </div>
-<div id="WHO INVENTED ALGORITHOM" class="tabcontent">
-  <h3>WHO INVENTED ALGORITHOM</h3>
-  </div>
-<div id="WHAT IS ALGORITHOM" class="tabcontent">
-  <h3>WHAT IS ALGORITHOM</h3>
-  </div>
-<div id="HOW ALGORITHOM WORKS" class="tabcontent">
-  <h3>HOW ALGORITHOM WORKS</h3>
-  </div>
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
-</body>
+    
+    <img src="https://www.kasandbox.org/programming-images/animals/rabbit.png" alt="Rabbit with lop ears in barn" width="203"> 
+    
+    <h3>Why rabbits make great pets</h3>
+    
+    <ul>
+        <li>They're furry!</li>
+        <li>Great listeners!</li>
+        <li>Eat all your leftover carrots!</li>
+    </ul>
+    
+    <h3>Top 3 most famous rabbits</h3>
+    
+    <ol>
+        <li>Bugs bunny</li>
+        <li>Easter Bunny</li>
+        <li>Thumper</li>
+    </ol>
+    
+    
+    </body>
 </html>
